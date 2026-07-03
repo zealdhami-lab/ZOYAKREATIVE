@@ -6,19 +6,19 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 .hidden { display: none !important; }
 
-/* NEW: PRELOADER STYLES */
+/* PRELOADER STYLES */
 #preloader {
     position: fixed; inset: 0; background: #fff; z-index: 9999; 
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     transition: opacity 0.8s ease;
 }
-.preloader-logo { font-family: 'Playfair Display', serif; font-size: 36px; letter-spacing: 4px; color: #222; margin-bottom: 20px; animation: pulse 1.5s infinite alternate; }
+.preloader-logo { font-family: 'Playfair Display', serif; font-size: 36px; letter-spacing: 4px; color: #222; margin-bottom: 20px; animation: pulse 1.5s infinite alternate; text-align: center; }
 .preloader-line { width: 100px; height: 2px; background: #B76E79; overflow: hidden; position: relative; }
 .preloader-line::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #222; animation: slideRight 1.5s infinite ease-in-out; }
 @keyframes pulse { 0% { opacity: 0.6; transform: scale(0.98); } 100% { opacity: 1; transform: scale(1); } }
 @keyframes slideRight { 0% { left: -100%; } 100% { left: 100%; } }
 
-/* NEW: SCROLL REVEAL ANIMATIONS */
+/* SCROLL REVEAL ANIMATIONS */
 .reveal { opacity: 0; transform: translateY(40px); transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .reveal.active { opacity: 1; transform: translateY(0); }
 
@@ -35,9 +35,9 @@ header { background-color: #fff; position: sticky; top: 0; z-index: 1000; border
 .nav-icons i:hover { color: #B76E79; }
 
 /* HERO BANNER */
-.hero { height: 70vh; background: url('images/hero-banner.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative; }
+.hero { height: 70vh; background: url('images/hero-banner.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative; background-color: #111; }
 .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); }
-.hero-content { position: relative; z-index: 1; text-align: center; color: #fff; }
+.hero-content { position: relative; z-index: 1; text-align: center; color: #fff; padding: 0 20px; }
 .hero-content h1 { font-size: 52px; margin-bottom: 15px; letter-spacing: 2px; font-weight: 400; }
 .hero-content p { font-size: 16px; margin-bottom: 30px; letter-spacing: 2px; text-transform: uppercase; }
 .btn-primary { display: inline-block; background-color: #fff; color: #333; padding: 14px 40px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; border: none; cursor: pointer; transition: background 0.3s, color 0.3s; }
@@ -55,11 +55,13 @@ header { background-color: #fff; position: sticky; top: 0; z-index: 1000; border
 /* PRODUCT SECTIONS */
 .product-section { padding: 60px 20px; background-color: #faf9f8; border-bottom: 1px solid #eee; }
 .product-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto; }
-.product-card { background: #fff; width: 350px; padding: 15px; position: relative; transition: box-shadow 0.3s; }
+
+/* UPDATED: Product card width to fit mobile */
+.product-card { background: #fff; width: 100%; max-width: 350px; padding: 15px; position: relative; transition: box-shadow 0.3s; margin: 0 auto; }
 .product-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
 .hidden-product { display: none; }
 
-/* NEW: HOVER IMAGE SYSTEM */
+/* HOVER IMAGE SYSTEM */
 .image-wrapper { position: relative; width: 100%; height: 350px; overflow: hidden; margin-bottom: 20px; cursor: pointer; background: #fdfdfd; }
 .img-primary, .img-secondary { width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; transition: opacity 0.6s ease, transform 0.6s ease; }
 .img-secondary { opacity: 0; transform: scale(1.05); }
@@ -81,14 +83,13 @@ header { background-color: #fff; position: sticky; top: 0; z-index: 1000; border
 .btn-inquire { display: block; width: 100%; padding: 14px; background: transparent; border: 1px solid #333; color: #333; font-family: inherit; text-transform: uppercase; font-size: 12px; font-weight: 600; letter-spacing: 1px; cursor: pointer; transition: all 0.3s; text-align: center; }
 .product-card:hover .btn-inquire { background: #333; color: #fff; }
 
-/* NEW: THE ATELIER INSTAGRAM GRID */
+/* THE ATELIER INSTAGRAM GRID */
 .atelier-section { max-width: 1200px; margin: 80px auto 40px auto; padding: 0 20px; }
 .atelier-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 250px; gap: 15px; }
 .atelier-item { width: 100%; height: 100%; overflow: hidden; border-radius: 8px; position: relative; cursor: pointer; }
 .atelier-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .atelier-item:hover img { transform: scale(1.08); }
 .atelier-item.large { grid-column: span 2; grid-row: span 2; }
-/* Add a subtle dark overlay on hover to feel like Instagram */
 .atelier-item::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0); transition: background 0.3s ease; }
 .atelier-item:hover::after { background: rgba(0,0,0,0.15); }
 
@@ -109,11 +110,11 @@ body.category-page-active .product-section.active-page .see-more-container { dis
 .form-group { display: flex; flex-direction: column; }
 .form-group.full-width { grid-column: span 2; }
 .appointment-form label { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; color: #444; font-weight: 600; }
-.appointment-form input, .appointment-form select, .appointment-form textarea { padding: 12px 15px; border: 1px solid #ddd; font-family: inherit; font-size: 14px; outline: none; transition: border-color 0.3s; }
+.appointment-form input, .appointment-form select, .appointment-form textarea { padding: 12px 15px; border: 1px solid #ddd; font-family: inherit; font-size: 14px; outline: none; transition: border-color 0.3s; width: 100%; }
 .appointment-form input:focus, .appointment-form select:focus, .appointment-form textarea:focus { border-color: #B76E79; }
 .appointment-form textarea { resize: vertical; height: 100px; }
 .locked-input { background-color: #fcf6f7 !important; color: #B76E79 !important; font-weight: 600 !important; border-color: #B76E79 !important; cursor: not-allowed; }
-.btn-submit { grid-column: span 2; background-color: #B76E79; color: #fff; border: none; padding: 16px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; cursor: pointer; transition: background 0.3s; margin-top: 10px; }
+.btn-submit { grid-column: span 2; background-color: #B76E79; color: #fff; border: none; padding: 16px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; cursor: pointer; transition: background 0.3s; margin-top: 10px; width: 100%; }
 .btn-submit:hover { background-color: #9c5c66; }
 
 /* MODAL LAYOUT */
@@ -152,20 +153,6 @@ body.category-page-active .product-section.active-page .see-more-container { dis
 .floating-concierge:hover { transform: translateY(-5px); background-color: #B76E79; }
 .floating-concierge:hover i { color: #fff; }
 
-@media (max-width: 768px) { 
-    .modal-split { flex-direction: column; } 
-    .modal-left { border-right: none; border-bottom: 1px solid #eee; height: 40%; } 
-    .modal-right { padding: 30px; height: 60%; overflow-y: auto; } 
-    .btn-back { position: relative; display: block; margin-bottom: 20px;} 
-    .floating-concierge { bottom: 20px; right: 20px; padding: 15px; }
-    .floating-concierge span { display: none; }
-    .floating-concierge i { font-size: 24px; margin: 0; }
-    
-    /* Atelier Grid Mobile Adjustments */
-    .atelier-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
-    .atelier-item.large { grid-column: span 2; grid-row: span 2; }
-}
-
 /* TRUST BADGES & FOOTER */
 .trust-badges { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: 0 auto 60px; text-align: center; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; padding: 40px 20px; }
 .badge { display: flex; flex-direction: column; align-items: center; gap: 15px; }
@@ -186,7 +173,7 @@ footer { background-color: #222; color: #fff; text-align: center; padding: 60px 
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #f4f4f4; /* Match your site's secondary/accent color */
+  background-color: #f4f4f4; 
   border: 1px solid #ddd;
   color: #333;
   cursor: pointer;
@@ -201,6 +188,75 @@ footer { background-color: #222; color: #fff; text-align: center; padding: 60px 
 #returnToTop:hover {
   background-color: #e0e0e0;
   transform: translateY(-5px);
+}
+
+/* ========================================= */
+/* COMPREHENSIVE MOBILE RESPONSIVENESS       */
+/* ========================================= */
+
+@media (max-width: 768px) { 
+    /* Top Bar & Header Adjustments */
+    .top-bar { flex-direction: column; gap: 8px; font-size: 10px; padding: 10px; }
+    .nav-container { flex-direction: column; padding: 15px 20px; gap: 20px; }
+    .logo { font-size: 26px; }
+    .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .nav-icons { justify-content: center; width: 100%; margin-top: 5px; gap: 30px; }
+
+    /* Hero Banner Mobile */
+    .hero { height: 60vh; }
+    .hero-content h1 { font-size: 34px; letter-spacing: 1px; }
+    .hero-content p { font-size: 12px; margin-bottom: 25px; }
+    .btn-primary { padding: 12px 30px; font-size: 12px; }
+
+    /* Categories / Archives */
+    .section-title { font-size: 26px; margin-bottom: 30px; }
+    .category-wrapper { gap: 25px; }
+    .category-item img { width: 90px; height: 90px; }
+    .category-item span { font-size: 12px; }
+
+    /* Product Grid Mobile */
+    .product-grid { gap: 25px; padding: 0 10px; }
+    .image-wrapper { height: 300px; } /* Slightly shorter images on mobile */
+    .btn-back { display: block; position: relative; top: 0; text-align: center; margin-bottom: 20px; width: 100%; }
+
+    /* Modals for Mobile */
+    .modal-content { height: 90vh; width: 95%; }
+    .modal-split { flex-direction: column; } 
+    .modal-left { border-right: none; border-bottom: 1px solid #eee; height: 35%; padding: 10px;} 
+    .modal-right { padding: 25px 20px; height: 65%; overflow-y: auto; } 
+    .modal-right h2 { font-size: 22px; margin-bottom: 15px; }
+    .close-modal { top: 10px; right: 15px; font-size: 28px; }
+
+    /* Appointment Form Mobile */
+    .appointment-form { grid-template-columns: 1fr; }
+    .form-group.full-width { grid-column: span 1; }
+    .btn-submit { grid-column: span 1; padding: 14px; }
+    .appointment-section { padding: 60px 15px; }
+
+    /* Trust Badges */
+    .trust-badges { flex-direction: column; gap: 35px; padding: 30px 15px; }
+    
+    /* Footer */
+    .footer-links { flex-direction: column; gap: 15px; }
+    footer { padding: 40px 20px 20px; }
+
+    /* Floating Buttons & Concierge */
+    .floating-concierge { bottom: 20px; right: 20px; padding: 15px; border-radius: 50%; }
+    .floating-concierge span { display: none; }
+    .floating-concierge i { font-size: 24px; margin: 0; }
+    #returnToTop { bottom: 90px; right: 20px; width: 45px; height: 45px; }
+    
+    /* Atelier Grid Mobile Adjustments */
+    .atelier-section { margin-top: 50px; }
+    .atelier-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; gap: 10px; }
+    .atelier-item.large { grid-column: span 2; grid-row: span 2; }
+}
+
+@media (max-width: 400px) {
+    /* Ultra-small screens */
+    .hero-content h1 { font-size: 28px; }
+    .image-wrapper { height: 260px; }
+    .logo { font-size: 22px; }
 }
 
 
