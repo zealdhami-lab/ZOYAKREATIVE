@@ -1,7 +1,8 @@
 export const handler = async (event) => {
   if (event.httpMethod !== 'POST') return { statusCode: 405, body: 'Method Not Allowed' };
 
-  const response = await fetch('YOUR_SHEETDB_API_URL', {
+  const SHEETDB_URL = 'https://sheetdb.io/api/v1/invgqd7zpxg5h';
+  const response = await fetch(SHEETDB_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -15,6 +16,3 @@ export const handler = async (event) => {
     body: JSON.stringify({ message: response.ok ? 'Success' : 'Error' })
   };
 };
-git add .
-git commit -m "Initial upload of jewelry site"
-git push -u origin main
