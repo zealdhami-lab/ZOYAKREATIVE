@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOYAKREATIVE | Unleash Your Graceful Aura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- NEW: WHITE-GLOVE PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-logo">ZOYAKREATIVE</div>
+        <div class="preloader-line"></div>
+    </div>
+
+    <div class="top-bar">
+        <span><i class="fas fa-phone-alt"></i> +91 98765 43210</span>
+        <span>Bespoke Designs | Expert Consultations | Lifetime Maintenance</span>
+        <span>Mumbai, India</span>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#collections" id="nav-collections">Collections</a>
+                <a href="#appointment">Custom Designs</a>
+                <a href="#appointment">Book Consultation</a>
+            </div>
+            
+            <a href="#" class="logo" id="nav-logo">ZOYAKREATIVE</a>
+            
+            <div class="nav-icons">
+                <i class="fas fa-search" id="open-search" style="cursor: pointer;" title="Search Catalog"></i>
+                <i class="far fa-heart" id="open-wishlist" style="cursor: pointer;" title="View Wishlist"></i>
+                <a href="#appointment"><i class="far fa-calendar-alt"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero reveal">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Unleash Your Graceful Aura</h1>
+            <p>Explore our archives & bring your unique vision to life</p>
+            <a href="#appointment" class="btn-primary">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- SHOP CATEGORIES -->
+    <section class="shop-categories reveal" id="collections">
+        <h2 class="section-title">Explore Our Archives</h2>
+        <div class="category-wrapper">
+            <a href="#rings-section" class="category-item"><img src="images/Rings.jpg" alt="Rings"><span>Rings</span></a>
+            <a href="#earrings-section" class="category-item"><img src="images/Earrings.jpg" alt="Earrings"><span>Earrings</span></a>
+            <a href="#necklaces-section" class="category-item"><img src="images/Necklaces.jpg" alt="Necklaces"><span>Necklaces</span></a>
+            <a href="#bracelets-section" class="category-item"><img src="images/Bracelets.jpg" alt="Bracelets"><span>Bracelets</span></a>
+            <a href="#sets-section" class="category-item"><img src="images/Sets.jpg" alt="Sets"><span>Sets</span></a>
+        </div>
+    </section>
+
+    <!-- CATEGORY 1: RINGS -->
+    <section class="product-section" id="rings-section">
+        <div class="category-header reveal">
+            <button class="btn-back"><i class="fas fa-arrow-left"></i> Back to Collections</button>
+            <h2 class="section-title">Dazzling Diamond Rings</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal" data-title="Sparkling Cluster Diamond Ring" data-specs="ZKR-R1001|Diamond Ring|1.50 ct|VVS FG|45|Brilliant Round|4.20 g|Rose Gold" data-img="images/ring1.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <!-- NEW: Hover Image Wrappers -->
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/ring1.jpg" alt="Ring 1" class="img-primary">
+                    <img src="images/ring1-hover.jpg" alt="Ring 1 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Sparkling Cluster Ring</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Shinning Glory Solitaire" data-specs="ZKR-R1002|Platinum Jewellery|2.00 ct|IF D|1|Emerald Cut|5.10 g|Platinum" data-img="images/ring2.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/ring2.jpg" alt="Ring 2" class="img-primary">
+                    <img src="images/ring2-hover.jpg" alt="Ring 2 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Shinning Glory Solitaire</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Classic Eternity Band" data-specs="ZKR-R1003|Diamond Band|0.85 ct|SI GH|22|Round|3.50 g|White Gold" data-img="images/ring3.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/ring3.jpg" alt="Ring 3" class="img-primary">
+                    <img src="images/ring3-hover.jpg" alt="Ring 3 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Classic Eternity Band</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Royal Ruby Halo Ring" data-specs="ZKR-R1004|Precious Stone Ring|0.40 ct|VS FG|16|Round & Oval|4.80 g|Yellow Gold" data-img="images/ring4.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/ring4.jpg" alt="Ring 4" class="img-primary">
+                    <img src="images/ring4-hover.jpg" alt="Ring 4 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Royal Ruby Halo Ring</div><div class="product-status">Bespoke Only</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Vintage Emerald Cut" data-specs="ZKR-R1005|Platinum Jewellery|3.10 ct|VVS E|3|Step Cut|6.00 g|Platinum" data-img="images/ring5.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/ring5.jpg" alt="Ring 5" class="img-primary">
+                    <img src="images/ring5-hover.jpg" alt="Ring 5 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Vintage Emerald Cut</div><div class="product-status">Bespoke Only</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Twisted Vine Diamond Ring" data-specs="ZKR-R1006|Diamond Ring|0.65 ct|SI GH|54|Pavé Round|3.80 g|Rose Gold" data-img="images/ring6.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/ring6.jpg" alt="Ring 6" class="img-primary">
+                    <img src="images/ring6-hover.jpg" alt="Ring 6 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Twisted Vine Diamond Ring</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+        </div>
+        <div class="see-more-container reveal"><button class="btn-see-more">View All Rings</button></div>
+    </section>
+
+    <!-- CATEGORY 2: EARRINGS -->
+    <section class="product-section" id="earrings-section" style="background-color: #fff;">
+        <div class="category-header reveal">
+            <button class="btn-back"><i class="fas fa-arrow-left"></i> Back to Collections</button>
+            <h2 class="section-title">Elegant Earrings</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal" data-title="Aurora Rose Gold Studs" data-specs="ZKR-E2001|Diamond Earrings|1.20 ct|VS GH|32|Round Brilliant|4.50 g|Rose Gold" data-img="images/earring1.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/earring1.jpg" alt="Earring 1" class="img-primary">
+                    <img src="images/earring1-hover.jpg" alt="Earring 1 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Aurora Rose Gold Studs</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Classy Geometric Drop" data-specs="ZKR-E2002|Diamond Earrings|2.40 ct|VVS FG|84|Baguette & Round|8.20 g|Yellow Gold" data-img="images/earring2.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/earring2.jpg" alt="Earring 2" class="img-primary">
+                    <img src="images/earring2-hover.jpg" alt="Earring 2 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Classy Geometric Drop</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Pearl & Diamond Teardrops" data-specs="ZKR-E2003|Pearl Jewellery|0.80 ct|SI GH|24|Round|6.10 g|White Gold" data-img="images/earring3.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/earring3.jpg" alt="Earring 3" class="img-primary">
+                    <img src="images/earring3-hover.jpg" alt="Earring 3 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Pearl & Diamond Teardrops</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Sapphire Chandelier Earrings" data-specs="ZKR-E2004|Precious Stone|3.50 ct|VS FG|112|Marquise & Round|12.00 g|Platinum" data-img="images/earring4.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/earring4.jpg" alt="Earring 4" class="img-primary">
+                    <img src="images/earring4-hover.jpg" alt="Earring 4 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Sapphire Chandelier</div><div class="product-status">Bespoke Only</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Minimalist Diamond Hoops" data-specs="ZKR-E2005|Diamond Earrings|1.00 ct|SI GH|40|Round|5.50 g|White Gold" data-img="images/earring5.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/earring5.jpg" alt="Earring 5" class="img-primary">
+                    <img src="images/earring5-hover.jpg" alt="Earring 5 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Minimalist Diamond Hoops</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Floral Diamond Studs" data-specs="ZKR-E2006|Diamond Earrings|1.80 ct|VVS E|14|Marquise|3.90 g|Yellow Gold" data-img="images/earring6.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/earring6.jpg" alt="Earring 6" class="img-primary">
+                    <img src="images/earring6-hover.jpg" alt="Earring 6 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Floral Diamond Studs</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+        </div>
+        <div class="see-more-container reveal"><button class="btn-see-more">View All Earrings</button></div>
+    </section>
+
+    <!-- CATEGORY 3: NECKLACES -->
+    <section class="product-section" id="necklaces-section">
+        <div class="category-header reveal">
+            <button class="btn-back"><i class="fas fa-arrow-left"></i> Back to Collections</button>
+            <h2 class="section-title">Exquisite Necklaces</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal" data-title="Sparkling Gold Desired Necklace" data-specs="ZKR-N3001|Bridal Jewellery|8.50 ct|Polki/Uncut|-|Uncut|45.00 g|Yellow Gold" data-img="images/necklace1.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/necklace1.jpg" alt="Necklace 1" class="img-primary">
+                    <img src="images/necklace1-hover.jpg" alt="Necklace 1 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Sparkling Gold Necklace</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Geometric Rose Gold Bar" data-specs="ZKR-N3002|Diamond Necklace|0.25 ct|SI GH|15|Round|6.50 g|Rose Gold" data-img="images/necklace2.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/necklace2.jpg" alt="Necklace 2" class="img-primary">
+                    <img src="images/necklace2-hover.jpg" alt="Necklace 2 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Geometric Rose Gold Bar</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Diamond Tennis Choker" data-specs="ZKR-N3003|Diamond Jewellery|12.00 ct|VVS FG|125|Round Brilliant|28.00 g|White Gold" data-img="images/necklace3.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/necklace3.jpg" alt="Necklace 3" class="img-primary">
+                    <img src="images/necklace3-hover.jpg" alt="Necklace 3 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Diamond Tennis Choker</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Sapphire Pendant Drop" data-specs="ZKR-N3004|Precious Pendant|1.50 ct|VS GH|35|Pear & Round|8.20 g|Platinum" data-img="images/necklace4.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/necklace4.jpg" alt="Necklace 4" class="img-primary">
+                    <img src="images/necklace4-hover.jpg" alt="Necklace 4 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Sapphire Pendant Drop</div><div class="product-status">Bespoke Only</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Princess Cut Lariat" data-specs="ZKR-N3005|Diamond Necklace|2.10 ct|VVS F|2|Princess|12.50 g|White Gold" data-img="images/necklace5.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/necklace5.jpg" alt="Necklace 5" class="img-primary">
+                    <img src="images/necklace5-hover.jpg" alt="Necklace 5 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Princess Cut Lariat</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Vintage Pearl Strand" data-specs="ZKR-N3006|Pearl Jewellery|1.10 ct|SI GH|42|Round (Clasp)|48.00 g|Yellow Gold" data-img="images/necklace6.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/necklace6.jpg" alt="Necklace 6" class="img-primary">
+                    <img src="images/necklace6-hover.jpg" alt="Necklace 6 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Vintage Pearl Strand</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+        </div>
+        <div class="see-more-container reveal"><button class="btn-see-more">View All Necklaces</button></div>
+    </section>
+
+    <!-- CATEGORY 4: BRACELETS -->
+    <section class="product-section" id="bracelets-section" style="background-color: #fff;">
+        <div class="category-header reveal">
+            <button class="btn-back"><i class="fas fa-arrow-left"></i> Back to Collections</button>
+            <h2 class="section-title">Brilliant Bracelets</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal" data-title="Graceful Diamond Chain" data-specs="ZKR-B4001|Diamond Bracelet|3.50 ct|VS FG|65|Round|14.00 g|White Gold" data-img="images/bracelet1.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/bracelet1.jpg" alt="Bracelet 1" class="img-primary">
+                    <img src="images/bracelet1-hover.jpg" alt="Bracelet 1 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Graceful Diamond Chain</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Radiant Diamond Cluster" data-specs="ZKR-B4002|Diamond Bracelet|4.80 ct|VVS E|120|Round & Baguette|18.50 g|Yellow Gold" data-img="images/bracelet2.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/bracelet2.jpg" alt="Bracelet 2" class="img-primary">
+                    <img src="images/bracelet2-hover.jpg" alt="Bracelet 2 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Radiant Diamond Cluster</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Classic Tennis Bracelet" data-specs="ZKR-B4003|Diamond Bracelet|2.00 ct|SI GH|55|Round|11.20 g|White Gold" data-img="images/bracelet3.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/bracelet3.jpg" alt="Bracelet 3" class="img-primary">
+                    <img src="images/bracelet3-hover.jpg" alt="Bracelet 3 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Classic Tennis Bracelet</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Rose Gold Open Bangle" data-specs="ZKR-B4004|Gold Bangle|0.60 ct|VS GH|12|Round|16.00 g|Rose Gold" data-img="images/bracelet4.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/bracelet4.jpg" alt="Bracelet 4" class="img-primary">
+                    <img src="images/bracelet4-hover.jpg" alt="Bracelet 4 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Rose Gold Open Bangle</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Sapphire Link Bracelet" data-specs="ZKR-B4005|Precious Stone|2.20 ct|VVS F|48|Oval & Round|22.00 g|Platinum" data-img="images/bracelet5.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/bracelet5.jpg" alt="Bracelet 5" class="img-primary">
+                    <img src="images/bracelet5-hover.jpg" alt="Bracelet 5 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Sapphire Link Bracelet</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Charm Diamond Bracelet" data-specs="ZKR-B4006|Diamond Jewellery|1.80 ct|SI GH|95|Pavé Setup|15.50 g|Rose Gold" data-img="images/bracelet6.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/bracelet6.jpg" alt="Bracelet 6" class="img-primary">
+                    <img src="images/bracelet6-hover.jpg" alt="Bracelet 6 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Charm Diamond Bracelet</div><div class="product-status">Bespoke Only</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+        </div>
+        <div class="see-more-container reveal"><button class="btn-see-more">View All Bracelets</button></div>
+    </section>
+
+    <!-- CATEGORY 5: SETS -->
+    <section class="product-section" id="sets-section">
+        <div class="category-header reveal">
+            <button class="btn-back"><i class="fas fa-arrow-left"></i> Back to Collections</button>
+            <h2 class="section-title">Magnificent Sets</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card reveal" data-title="Bridal Diamond Parure" data-specs="ZKR-S5001|Bridal Suite|25.00 ct|VVS E|450|Mixed Cuts|125.00 g|White Gold" data-img="images/set1.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/set1.jpg" alt="Set 1" class="img-primary">
+                    <img src="images/set1-hover.jpg" alt="Set 1 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Bridal Diamond Parure</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Emerald & Diamond Suite" data-specs="ZKR-S5002|Precious Suite|18.50 ct|VS FG|280|Emerald & Round|95.00 g|Platinum" data-img="images/set2.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/set2.jpg" alt="Set 2" class="img-primary">
+                    <img src="images/set2-hover.jpg" alt="Set 2 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Emerald & Diamond Suite</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card reveal" data-title="Ruby Royal Collection" data-specs="ZKR-S5003|Heritage Suite|14.00 ct|VVS F|310|Oval & Round|110.00 g|Yellow Gold" data-img="images/set3.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/set3.jpg" alt="Set 3" class="img-primary">
+                    <img src="images/set3-hover.jpg" alt="Set 3 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Ruby Royal Collection</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Pearl Blossom Set" data-specs="ZKR-S5004|Pearl Suite|4.50 ct|SI GH|120|Round|65.00 g|Rose Gold" data-img="images/set4.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/set4.jpg" alt="Set 4" class="img-primary">
+                    <img src="images/set4-hover.jpg" alt="Set 4 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Pearl Blossom Set</div><div class="product-status">Customizable</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Vintage Sapphire Suite" data-specs="ZKR-S5005|Precious Suite|12.20 ct|VS FG|180|Geometric Cuts|85.00 g|White Gold" data-img="images/set5.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/set5.jpg" alt="Set 5" class="img-primary">
+                    <img src="images/set5-hover.jpg" alt="Set 5 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Vintage Sapphire Suite</div><div class="product-status">Private Commission</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+            <div class="product-card hidden-product reveal" data-title="Modern Geometric Parure" data-specs="ZKR-S5006|Diamond Suite|9.80 ct|VVS E|210|Baguette & Round|78.00 g|Rose Gold" data-img="images/set6.jpg">
+                <i class="far fa-heart wishlist-icon"></i>
+                <div class="image-wrapper modal-trigger">
+                    <img src="images/set6.jpg" alt="Set 6" class="img-primary">
+                    <img src="images/set6-hover.jpg" alt="Set 6 Worn" class="img-secondary">
+                </div>
+                <div class="product-info"><div class="product-name">Modern Geometric Parure</div><div class="product-status">Bespoke Only</div><button class="btn-inquire">Inquire About This Piece</button></div>
+            </div>
+        </div>
+        <div class="see-more-container reveal"><button class="btn-see-more">View All Sets</button></div>
+    </section>
+
+    <!-- NEW: THE ATELIER INSTAGRAM GRID -->
+    <section class="atelier-section reveal" id="atelier">
+        <h2 class="section-title">The Atelier Diaries</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 40px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Behind The Craftsmanship</p>
+        <div class="atelier-grid">
+            <div class="atelier-item large"><img src="images/atelier1.jpg" alt="Crafting Process"></div>
+            <div class="atelier-item"><img src="images/atelier2.jpg" alt="Jewelry Sketch"></div>
+            <div class="atelier-item"><img src="images/atelier3.jpg" alt="Diamond Setting"></div>
+            <div class="atelier-item"><img src="images/atelier4.jpg" alt="Polishing"></div>
+            <div class="atelier-item"><img src="images/atelier5.jpg" alt="Finished Masterpiece"></div>
+        </div>
+    </section>
+
+   <!-- APPOINTMENT SECTION -->
+<section id="appointment" class="appointment-section reveal">
+    <h2 class="section-title">Book a Private Consultation</h2>
+    <p>Whether you wish to recreate a piece from our archives, customize a current design, or bring an entirely new vision to life, our expert jewelers are here to assist you.</p>
+    
+    <form class="appointment-form" id="bookingForm">
+        <!-- Added name="data[ReferencePiece]" -->
+        <div class="form-group full-width hidden" id="reference-group">
+            <label>Reference Piece</label>
+            <input type="text" id="productReference" name="data[ReferencePiece]" readonly class="locked-input">
+        </div>
+
+        <!-- Added name attributes to all fields -->
+        <div class="form-group"><label>First Name</label><input type="text" name="data[FirstName]" placeholder="Enter your first name" required></div>
+        <div class="form-group"><label>Last Name</label><input type="text" name="data[LastName]" placeholder="Enter your last name" required></div>
+        <div class="form-group"><label>Email Address</label><input type="email" name="data[Email]" placeholder="Enter your email" required></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" name="data[Phone]" placeholder="+91 XXXXX XXXXX" required></div>
+        <div class="form-group"><label>Preferred Date</label><input type="date" name="data[Date]" required></div>
+        <div class="form-group">
+            <label>Interest</label>
+            <select id="inquiryType" name="data[Interest]" required>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="specific">Inquire about a specific piece</option>
+                <option value="bespoke">Bespoke / Custom Design</option>
+                <option value="bridal">Bridal Consultation</option>
+                <option value="general">General Inquiry</option>
+            </select>
+        </div>
+        <div class="form-group full-width"><label>Message / Details</label><textarea name="data[Message]" placeholder="Tell us more about what you are looking for..." required></textarea></div>
+        
+        <!-- Added id="submit-btn" for the JavaScript to control it -->
+        <button type="submit" class="btn-submit" id="submit-btn">Request Appointment</button>
+    </form>
+</section>
+
+    <!-- Trust Badges & Footer -->
+    <section class="trust-badges reveal">
+        <div class="badge"><i class="fas fa-gem"></i><span>Bespoke<br>Customization</span></div>
+        <div class="badge"><i class="fas fa-certificate"></i><span>100% Certified<br>Materials</span></div>
+        <div class="badge"><i class="fas fa-user-tie"></i><span>Expert<br>Consultation</span></div>
+        <div class="badge"><i class="fas fa-sync-alt"></i><span>Lifetime<br>Maintenance</span></div>
+    </section>
+
+    <footer class="reveal">
+        <div class="footer-logo logo">ZOYAKREATIVE</div>
+        <ul class="footer-links">
+            <li><a href="#collections">Our Archives</a></li>
+            <li><a href="#appointment">Custom Designs</a></li>
+            <li><a href="#appointment">Contact Us</a></li>
+            <li><a href="#">About The Brand</a></li>
+        </ul>
+        <div class="contact-info">
+            <p>Email: bespoke@zoyakreative.com | Phone: +91 98765 43210</p>
+            <p>Studio: Mumbai, Maharashtra, India (By Appointment Only)</p>
+        </div>
+        <div class="copyright">&copy; 2026 ZOYAKREATIVE. All Rights Reserved. Crafted with precision.</div>
+    </footer>
+
+    <!-- PRODUCT DETAILS MODAL -->
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div class="modal-split">
+                <div class="modal-left"><img id="modal-image" src="" alt="Product"></div>
+                <div class="modal-right">
+                    <h2 id="modal-title">Product Name</h2>
+                    <div class="specs-container" id="modal-specs-container"></div>
+                    <button class="btn-submit modal-btn" id="modal-inquire-btn" style="margin-top: 30px;">Consult About This Piece</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST MODAL -->
+    <div id="wishlist-modal" class="modal hidden">
+        <div class="modal-content" style="max-width: 600px; height: auto; max-height: 80vh;">
+            <span class="close-modal" id="close-wishlist">&times;</span>
+            <div style="padding: 40px;">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 26px; color: #222; margin-bottom: 20px;">Your Selected Pieces</h2>
+                <hr class="modal-divider" style="margin-bottom: 0;">
+                <div id="wishlist-items-container" style="max-height: 50vh; overflow-y: auto; padding-right: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH MODAL -->
+    <div id="search-modal" class="modal hidden">
+        <div class="modal-content" style="max-width: 600px; height: auto; max-height: 80vh;">
+            <span class="close-modal" id="close-search">&times;</span>
+            <div style="padding: 40px;">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 26px; color: #222; margin-bottom: 20px;">Find Your Perfect Piece</h2>
+                <input type="text" id="search-input" placeholder="Search for 'Rose Gold', 'Emerald', 'Ring'..." style="width: 100%; padding: 15px; font-size: 15px; border: 1px solid #ccc; border-radius: 4px; outline: none; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">
+                <hr class="modal-divider" style="margin-bottom: 0;">
+                <div id="search-results-container" style="max-height: 45vh; overflow-y: auto; padding-right: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING CONCIERGE BUTTON -->
+    <a href="https://wa.me/919876543210?text=Hello%20ZOYAKREATIVE,%20I%20would%20like%20to%20inquire%20about%20a%20bespoke%20piece." class="floating-concierge" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat With Us</span>
+    </a>
+    <button id="returnToTop" title="Go to top">
+  <i class="fas fa-chevron-up"></i>
+    </button>
+</body>
+</html>
+
+
